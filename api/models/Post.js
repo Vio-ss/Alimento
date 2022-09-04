@@ -13,7 +13,11 @@ const PostSchema = new mongoose.Schema(
     },
     photo: {
       type: String,
-      required: false,
+      required: true,
+    },
+    videos: {
+      type: String,
+      required: true,
     },
     username: {
       type: String,
@@ -21,11 +25,11 @@ const PostSchema = new mongoose.Schema(
     },
     categories: {
       type: Array,
-      required: false,
+      required: true,
     },
     tags: {
       type: Array,
-      required: false,
+      required: true,e
     },
   },
   { timestamps: true }
